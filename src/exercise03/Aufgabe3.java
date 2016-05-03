@@ -10,8 +10,6 @@ public class Aufgabe3 {
 		System.out.println("Zeichen eingeben:");
 		x = scanner.next().charAt(0);
 		
-		
-		
 		// Großbuchstabe
 		if (x >= 'A' && x <= 'Z') {
 			System.out.println("Großbuchstabe");
