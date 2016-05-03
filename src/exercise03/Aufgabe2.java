@@ -11,7 +11,7 @@ public class Aufgabe2 {
 		double durchmesser2;
 		double preis1;
 		double preis2;
-
+		
 		System.out.println("Preis für Pizza1 eingeben.");
 		preis1 = scanner.nextDouble();
 		System.out.println("Druchmesser für Pizza1 eingeben.");
