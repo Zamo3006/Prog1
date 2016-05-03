@@ -11,6 +11,7 @@ public class Aufgabe3 {
 		x = scanner.next().charAt(0);
 		
 		
+		
 		// Großbuchstabe
 		if (x >= 'A' && x <= 'Z') {
 			System.out.println("Großbuchstabe");
