@@ -1,16 +1,21 @@
 package exercise04;
 
 public class Aufgabe2 {
-public static void main(String[] args) {
-	double schleife=0;
-	double k = 1;
-	double schleifenaenderung = 0;
-	do {
-		schleifenaenderung = (1.0/Math.pow(k, 2));
-		schleife = schleife+schleifenaenderung;
-		k++;
-		System.out.println(6.0*schleife);
-	} while (schleifenaenderung > (1.0E-5));
-	System.out.println("Abbruch nach "+(k-1)+" Iterrationen");
-}
+
+	public static void main(String[] args) {
+
+		double reihe = 0;
+		double k = 1;
+		double reihenaenderung = 0;
+
+		do {
+			reihenaenderung = 6 * (1.0 / Math.pow(k, 2));
+			reihe = reihe + reihenaenderung;
+			k++;
+			System.out.println("Wert der Reihe: " + reihe);
+			System.out.println("Änderung der Reihe: " + reihenaenderung);
+		} while (reihenaenderung > (1.0E-5));
+
+		System.out.println("Abbruch nach " + (k - 1) + " Iterrationen");
+	}
 }
