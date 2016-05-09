@@ -7,15 +7,15 @@ public class Aufgabe4 {
 		Scanner s = new Scanner(System.in);
 		int zahl;
 		boolean prim = true;
-		
+
 		System.out.println("Bitte zu untersuchende Zahl eingeben:");
 		zahl = s.nextInt();
-		
-		if(zahl == 1){
+
+		if (zahl == 1) {
 			System.out.println("Untersuchte Zahl ist keine Primzahl!");
 			prim = false;
 		}
-		
+
 		for (int i = 2; i < zahl; i++) {
 			if (zahl % i == 0) {
 				prim = false;
@@ -23,11 +23,11 @@ public class Aufgabe4 {
 				break;
 			}
 		}
-		
+
 		if (prim) {
 			System.out.println("Untersuche Zahl ist eine Primzahl!");
 		}
-		
+
 		s.close();
 	}
 }
