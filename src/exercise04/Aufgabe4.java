@@ -11,6 +11,11 @@ public class Aufgabe4 {
 		System.out.println("Bitte zu untersuchende Zahl eingeben:");
 		zahl = s.nextInt();
 		
+		if(zahl == 1){
+			System.out.println("Untersuchte Zahl ist keine Primzahl!");
+			prim = false;
+		}
+		
 		for (int i = 2; i < zahl; i++) {
 			if (zahl % i == 0) {
 				prim = false;
