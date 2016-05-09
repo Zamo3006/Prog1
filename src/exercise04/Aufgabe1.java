@@ -9,7 +9,7 @@ public class Aufgabe1 {
 		System.out.println("Zeit eingeben:");
 		int zeit = scanner.nextInt();
 		double g = 9.80665;
-		boolean a = false;
+		boolean a = true;
 
 		// a)
 		if (a) {

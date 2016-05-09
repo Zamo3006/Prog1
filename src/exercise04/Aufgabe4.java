@@ -11,7 +11,7 @@ public class Aufgabe4 {
 		System.out.println("Bitte zu untersuchende Zahl eingeben:");
 		zahl = s.nextInt();
 
-		if (zahl == 1) {
+		if (zahl <= 1) {
 			System.out.println("Untersuchte Zahl ist keine Primzahl!");
 			prim = false;
 		}
