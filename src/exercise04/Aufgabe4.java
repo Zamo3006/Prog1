@@ -8,7 +8,7 @@ public class Aufgabe4 {
 		int zahl;
 		boolean prim = true;
 		
-		System.out.println("Biite zu untersuchende Zahl eingeben:");
+		System.out.println("Bitte zu untersuchende Zahl eingeben:");
 		zahl = s.nextInt();
 		
 		for (int i = 2; i < zahl; i++) {
