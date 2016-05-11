@@ -22,7 +22,9 @@ public class Aufgabe2 {
 		durchmesser2 = scanner.nextDouble();
 
 		double flaeche1 = (pi * Math.pow(durchmesser1, 2)) / 4.0;
+//		System.out.println(flaeche1);
 		double flaeche2 = (pi * Math.pow(durchmesser2, 2)) / 4.0;
+//		System.out.println(flaeche2);
 		double verhaeltnis1 = flaeche1 / preis1;
 		double verhaeltnis2 = flaeche2 / preis2;
 

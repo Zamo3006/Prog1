@@ -6,7 +6,6 @@ public class Aufgabe3 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		char x;
-
 		System.out.println("Zeichen eingeben:");
 		x = scanner.next().charAt(0);
 		
