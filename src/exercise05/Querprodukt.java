@@ -3,11 +3,13 @@ package exercise05;
 import java.util.Scanner;
 
 public class Querprodukt {
+	
 	public static void main(String[] args) {
+		
 		Scanner s = new Scanner(System.in);
 		boolean gueltig = false;
 		int eingabe;
-		int eingabe2;
+		int iterator;
 		int querprodukt = 1;
 		
 		do {
@@ -20,14 +22,14 @@ public class Querprodukt {
 			}
 		} while (!gueltig);
 		
-		eingabe2 = eingabe;
+		iterator = eingabe;
 		
 		do {
-			querprodukt *= eingabe % 10;
-			eingabe = eingabe / 10;
-		} while (eingabe > 0);
+			querprodukt *= iterator % 10;
+			iterator = iterator / 10;
+		} while (iterator > 0);
 		
-		System.out.println("Das Querprodukt von " + eingabe2 + " beträgt " + querprodukt);
+		System.out.println("Das Querprodukt von " + eingabe + " beträgt " + querprodukt);
 		
 		s.close();
 	}
