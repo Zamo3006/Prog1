@@ -18,11 +18,10 @@ public class Potenz {
 		System.out.println("Exponent eingeben:");
 		b = s.nextInt();
 
-		a = (b < 0) ? ((a == 0) ? 0 : (1.0 / a)) : a;
+		a = (b < 0 && a != 0) ? (1.0 / a) : a;
 		b = (b < 0) ? (b * -1) : b;
 
 		if (alternativ) {
-			System.out.println(a);
 			// long startTime = System.nanoTime();
 
 			for (int i = 0; i < b; i++) {

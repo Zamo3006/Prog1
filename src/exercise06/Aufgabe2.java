@@ -2,20 +2,20 @@ package exercise06;
 
 public class Aufgabe2 {
 	public static void main(String[] args) {
-		double number = 3.455;
-		System.out.println(new Aufgabe2().round(number, 2));
+		double number = -0.5;
+		System.out.println(round(number));
 	}
 
-	public double round(double number) {
-		number = (int) (number + 0.5);
+	public static double round(double number) {
+		number = (number > 0) ? (int) (number + 0.5) : (int) (number - 0.5);
+
 		return number;
-
 	}
 
-	public double round(double number, int decimals) {
+	public static double round(double number, int decimals) {
 		double multiplictor = Math.pow(10, decimals);
 		number *= multiplictor;
-		number = (double) (int) (number + 0.5);
+		number = (number > 0) ? (double) (int) (number + 0.5) : (double) (int) (number - 0.5);
 		number /= multiplictor;
 		return number;
 	}
