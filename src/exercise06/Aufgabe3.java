@@ -12,18 +12,18 @@ public class Aufgabe3 {
 		System.out.println("Zahl eingeben:");
 		number = s.nextInt();
 
-		int faculty = faculty(number);
+		long factorial = factorial(number);
 
-		System.out.println(faculty);
+		System.out.println(factorial);
 
 		s.close();
 	}
 
-	public static int faculty(int number) {
-		int faculty = 1;
+	public static long factorial(int number) {
+		long factorial = 1;
 		for (int i = 1; i <= number; i++) {
-			faculty *= i;
+			factorial *= i;
 		}
-		return faculty;
+		return factorial;
 	}
 }

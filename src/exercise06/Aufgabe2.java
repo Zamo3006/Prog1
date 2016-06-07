@@ -2,13 +2,12 @@ package exercise06;
 
 public class Aufgabe2 {
 	public static void main(String[] args) {
-		double number = -0.5;
-		System.out.println(round(number));
+		double number = -0.5454;
+		System.out.println(round(number,2));
 	}
 
 	public static double round(double number) {
 		number = (number > 0) ? (int) (number + 0.5) : (int) (number - 0.5);
-
 		return number;
 	}
 
