@@ -20,13 +20,13 @@ public class Aufgabe3 {
 		float[] values = new float[count];
 		
 		for (int i = 0; i < count; i++) {
-			System.out.println(i + 1 + ". Wert:");
+			System.out.println((i + 1) + ". Wert:");
 			values[i] = s.nextFloat();
 		}
 		
 		System.out.println("Kleinster Wert: " + minimum(values));
 		System.out.println("Größter Wert: " + maximum(values));
-		System.out.println("Arithmentischer Mittelwert: " + String.format("%.2f", average(values)));
+		System.out.println("Arithmetischer Mittelwert: " + String.format("%.2f", average(values)));
 		System.out.println("Standardabweicheung: "+ String.format("%.2f", deviation(values)));
 		
 		s.close();

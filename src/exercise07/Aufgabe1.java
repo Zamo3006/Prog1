@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Aufgabe1 {
 
 	public static void main(String[] args) {
-
+		
 		Scanner s = new Scanner(System.in);
 		double basis;
 		int exponent;
@@ -19,6 +19,7 @@ public class Aufgabe1 {
 		power = power(basis, exponent);
 		System.out.println(power);
 
+		//Testzeugs
 		long startTime = System.nanoTime();
 		power = power(basis, exponent);
 		long endTime = System.nanoTime();
@@ -49,7 +50,7 @@ public class Aufgabe1 {
 
 	// x^n = (x^2)^(n/2) for n % 2 == 0
 	// x^n = x*((x^2)^(n/2)) for n % 2 != 0
-	// runTime: log(exponent) versus exponent
+	// runTime: O(log(exponent)) versus O(exponent)
 	public static double power2(double basis, int exponent) {
 		if (exponent == 0) {
 			return 1;
