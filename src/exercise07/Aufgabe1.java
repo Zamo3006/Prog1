@@ -20,20 +20,20 @@ public class Aufgabe1 {
 		System.out.println(power);
 
 		//Testzeugs
-		long startTime = System.nanoTime();
-		power = power(basis, exponent);
-		long endTime = System.nanoTime();
-		long duration = (endTime - startTime);
-		System.out.println("zeit:" + duration);
-		System.out.println(power);
-
-		startTime = System.nanoTime();
-		power = power2(basis, exponent);
-		endTime = System.nanoTime();
-		duration = (endTime - startTime);
-		System.out.println("zeit:" + duration);
-		System.out.println(power);
-		
+//		long startTime = System.nanoTime();
+//		power = power(basis, exponent);
+//		long endTime = System.nanoTime();
+//		long duration = (endTime - startTime);
+//		System.out.println("zeit:" + duration);
+//		System.out.println(power);
+//
+//		startTime = System.nanoTime();
+//		power = power2(basis, exponent);
+//		endTime = System.nanoTime();
+//		duration = (endTime - startTime);
+//		System.out.println("zeit:" + duration);
+//		System.out.println(power);
+	
 
 		s.close();
 	}
