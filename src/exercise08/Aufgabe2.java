@@ -9,24 +9,28 @@ public class Aufgabe2 {
 	}
 
 	public static String spielen(String normal) {
+		
 		char[] normalAsChar = normal.toCharArray();
 		int anzahlVokale = 0;
+		
 		for (int i = 0; i < normalAsChar.length; i++) {
 			if (vokal(normalAsChar[i])) {
 				anzahlVokale++;
 			}
 		}
+		
 		char[] bSpracheAsChar = new char[(normalAsChar.length + (anzahlVokale * 2))];
-		int iterator = 0;
+		int iteratorBSprache = 0;
 		for (char buchstabe : normalAsChar) {
-			bSpracheAsChar[iterator] = buchstabe;
-			iterator++;
+			bSpracheAsChar[iteratorBSprache] = buchstabe;
+			iteratorBSprache++;
 			if (vokal(buchstabe)) {
-				bSpracheAsChar[iterator] = 'b';
-				bSpracheAsChar[iterator + 1] = buchstabe;
-				iterator += 2;
+				bSpracheAsChar[iteratorBSprache] = 'b';
+				bSpracheAsChar[iteratorBSprache + 1] = Character.toLowerCase(buchstabe);
+				iteratorBSprache += 2;
 			}
 		}
+		
 		String bSprache = String.valueOf(bSpracheAsChar);
 		return bSprache;
 	}
